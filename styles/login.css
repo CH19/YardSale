@@ -1,0 +1,71 @@
+@import url(./styles.css);
+
+body{
+    margin: 0;
+}
+.BigContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    flex-direction: column;
+}
+.FormContainer{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+  
+}
+.FormContainer > img:first-of-type{
+    width: 50%;
+    justify-self: center;
+    
+}
+.FormContainer > h1:first-of-type{
+    font-size: var(--bz);
+    text-align: center;
+    margin-bottom: 12px;
+    color: var(--hospital-green);
+}
+.FormContainer > p:first-of-type{
+    font-size: var(--mz);
+    text-align: center;
+    color: var( --very-light-pink);
+}
+.FormContainer > form > input:first-of-type, .FormContainer > form > input:nth-last-of-type(2){
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 32px;
+    font-size: var(--mz);
+    padding: 6px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.FormContainer form > input:last-child{
+    background-color: var(--hospital-green);
+    margin-top: 5px;
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--mz);
+    font-weight: bold;
+    height: 50px;
+}
+.FormContainer form > input:last-child:hover{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.34);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.34);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.34);
+}
+
+@media screen and (max-with:640px) {
+    .FormContainer > img:first-of-type{
+
+    }
+}

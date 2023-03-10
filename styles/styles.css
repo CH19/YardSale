@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap'); /*Fuentes seleccionadas*/
+:root{ /*Colores designados por diseño*/
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sz: 12px;
+    --mz: 14px;
+    --bz: 18px;
+}
+
+body{ /*Declarando la fuente en el Body*/
+    font-family: 'Quicksand', sans-serif;
+}
