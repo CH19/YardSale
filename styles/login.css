@@ -9,14 +9,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: none;
+
     flex-direction: column;
+
 }
 .FormContainer{
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
-  
+    position: relative;
+    
+
 }
 .FormContainer > img:first-of-type{
     width: 50%;
@@ -45,8 +48,9 @@ body{
 form{
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
-.FormContainer form > input:last-child, .primarybutton{
+.FormContainer form > input:last-of-type, .primarybutton{
     background-color: var(--hospital-green);
     margin-top: 5px;
     border-radius: 8px;
@@ -58,10 +62,19 @@ form{
     font-weight: bold;
     height: 50px;
 }
-.FormContainer form > input:last-child:hover{
+.FormContainer form > input:last-of-type:hover{
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.34);
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.34);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.34);
+}
+form a{
+    color: var(--hospital-green);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: var(--sz);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
 }
  
 /*Estilos de email confirm*/
@@ -92,8 +105,38 @@ form{
     cursor: pointer;
 }
 
-@media screen and (max-with:640px) {
-    .FormContainer > img:first-of-type{
+/*estilos de session*/
+.secondarybutton{
+    background-color: var(--white);
+    margin-top: 5px;
+    border-radius: 8px;
+    border: solid var(--hospital-green) 1px;
+    color: var(--hospital-green);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--mz);
+    font-weight: bold;
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 32px;
 
+  
+}
+
+@media screen and (max-width: 640px) {
+    .FormContainer{
+       width: 70%;
+    }
+    .FormContainer > img:first-of-type{
+        display: block;
+    }
+    /* form{
+        width: 90%;
+        font-size: var(--sz);
+    } */
+    .BigContainer > button:last-of-type{
+   
     }
 }
