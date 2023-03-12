@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/login.css">
+    <title>YardSale</title>
+    <style>
+.FormContainer > h1:first-of-type{ /*Cambiando el color del titulo solo en este documento html*/
+    text-align: start;
+    color: var(--dark);
+}
+@media screen and (max-width: 600px) {
+    /* .FormContainer div:first-of-type{
+        height: 100%;
+        width: 100%;
+    }
+    form{
+        height: 100%;
+        width: 100%;
+    }
+    .FormContainer{
+        justify-items: ;
+        height: 100%;
+        flex-direction: column;
+    } */
+    .BigContainer{
+        height: 100vh;
+    }
+    .FormContainer{
+        justify-content: space-between;
+        height: 100%;
+    }
+    .FormContainer div:first-of-type{
+        height: fit-content;
+    }
+    form input:last-of-type{
+        position: absolute;
+        bottom: 0;
+        margin: 20px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="BigContainer">
+        <div class="FormContainer">
+            <div>
+                <img src="../logos/logo_yard_sale.svg" alt="logo">
+            <h1>Rgister User</h1>
+            </div>
+            <form action="/">
+                <label for="name">Name</label> <input type="text" id="name" placeholder="Write your name">
+                <label for="email">Email</label> <input type="email" id="email" placeholder="Write your email">
+                <label for="password">Password</label> <input type="password" id="password" placeholder="Write your password">
+
+                <input type="submit" value="Create">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

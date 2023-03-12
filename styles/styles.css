@@ -11,6 +11,6 @@
     --bz: 18px;
 }
 
-body{ /*Declarando la fuente en el Body*/
+*{ /*Declarando la fuente en el Body*/
     font-family: 'Quicksand', sans-serif;
 }
