@@ -1,0 +1,59 @@
+@import url(./styles.css); /*Variables y fuentes*/
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header header"
+    "items items"
+    "items items";
+}
+.MenuContainer{
+    grid-area: header;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.MenuContainer figure{
+    padding: 0;
+}
+.MenuContainer > ul > li:last-of-type{
+    padding-top: 20px;
+    border-top: solid 1px var(--very-light-pink) ;
+}
+.MenuContainer  > ul > li:last-of-type a{
+    color: var(--hospital-green);
+    font-size: var(--mz);
+}
+.MenuContainer  > ul > li a{
+    display: inline-block;
+    color: var(--black);
+    font-size: var(bz);
+    margin-bottom: 15px;
+}
+.MenuMobile a, .MenuMobile li{
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: bold;
+}
+.MenuMobile ul{
+    list-style: none;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+.MenuMobile ul > ul:first-child{
+    border-bottom: solid 1px var(--very-light-pink);
+}
+.MenuMobile ul > ul:last-of-type li:last-of-type a{
+    color: var(--hospital-green) !important;
+    font-size: var(--sz);
+}
+.email{
+    font-size: var(--sz);
+    font-weight: 300 !important;
+    color: var(--very-light-pink);
+}
+main{
+    grid-area: items;
+}
