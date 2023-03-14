@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Document</title>
     <style>
-
+       .ProductInfo{
+        width: 360px;
+        padding-bottom: 24px;
+       }
+       .ProductInfo > img:first-of-type{
+        cursor: pointer;
+        width: 320px;
+       }
+       .ProductInfo > img:first-of-type:hover{
+        cursor: pointer;
+    }
+       .ProductInfo > div > button:last-of-type{
+            background-color: var(--hospital-green);
+        margin-top: 5px;
+        border-radius: 8px;
+        border: solid var(--hospital-green) 1px;
+        color: var(--white);
+         width: 100%;
+        cursor: pointer;
+     font-size: var(--mz);
+        font-weight: bold;
+     height: 50px;
+        width: 300px;
+        }
     </style>
 </head>
 <body>
@@ -16,7 +40,7 @@
         <p>35</p>
         <p>cupcake</p>
         <p>this's a cupcake whithout gluten, eggs and milk</p>
-        <button class="primarybuton"><img src="" alt=""></button>
+        <button class="primarybuton"><img src="../icons/icon_shopping_cart_notification.svg" alt="add to cart">Add to card</button>
     </div>
   </aside>
 </body>
