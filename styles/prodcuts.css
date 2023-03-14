@@ -1,8 +1,55 @@
 @import url(./styles.css);
 
+.MyOrder{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.OrderContent{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--very-light-pink);
+}
+.OrderContent p:first-of-type{
+    display: flex;
+    flex-direction: column;
+}
+.shoppingCart, .Products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "date price signo"
+    ;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    gap: 5px;
+}
+.Date, .categorie{
+    grid-area: date;
+    padding: 10px;
+}
+.price{
+    grid-area: price;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Products > img:last-of-type{
+    grid-area: signo;
+}
+.shoppingCart figure img{
+    width: var(--TamanoImg);
+    border-radius: 20px;
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 700px) {
   :root{
-        --TamannoCards: 140px;
+        --TamanoImg: 20vh;
+  }
+  .shoppingCart{
+    font-size: 1.5rem;
   }
 }
